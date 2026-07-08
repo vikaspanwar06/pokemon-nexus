@@ -1,0 +1,388 @@
+.compare-container{
+    padding: 20px 10px 0px;
+}
+.compare-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.compare-header h1{
+    color:white;
+    font-size:30px;
+    margin-bottom:1rem;
+    padding-top: 20px;
+}
+.compare-header p{
+    color:white;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom:.7rem;
+}
+
+.compare-layout {
+    display: flex;
+    gap: 15px;
+    margin: 0px auto;
+}
+.compare-card {
+    background: #17223f;
+    border-radius: 25px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: auto;
+}
+.battle-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.vs-circle {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #ffd400;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 30px rgba(255,212,0,.5);
+    margin-bottom: 10px;
+}
+
+.battle-winner {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.battle-center h2 {
+    color: white;
+    margin: 0;
+}
+
+.power-difference strong {
+    display: block;
+    font-size: 28px;
+    color: #22c55e;
+    margin-top: 8px;
+}
+.compare-card img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.compare-card h2 {
+    text-align: center;
+    margin: 20px 0;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.winner-card {
+    border: 2px solid #22c55e;
+    box-shadow: 0 0 30px rgba(34,197,94,.3);
+}
+.power-winner{
+    background: #17223f;
+    padding: 15px 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.power-score {
+    margin-top: 20px;
+    padding: 8px 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:linear-gradient( 90deg, #4facfe, #00f2fe);
+    color: #2d2d2d;
+    font-weight: 600;
+}
+
+.power-score strong {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.power-score span{
+  font-size: 15px;
+}
+
+.winner-card .power-score {
+    background: linear-gradient(90deg, #22c55e, #84cc16);
+}
+.compare-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 0px;
+}
+.compare-stat {
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+    text-transform: capitalize;
+}
+.compare-stat span {
+    font-size: 14px;
+    color: #bfc8e0;
+}
+
+.compare-stat strong {
+    font-size: 15px;
+    color: white;
+}
+
+.compare-types {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0px 0 20px;
+    flex-wrap: wrap;
+}
+
+.compare-type {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: white;
+    display: block;
+    max-width: 200px;
+    text-align: center;
+}
+
+.suggestions-section {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.suggestion-box {
+    background: #17223f;
+    border-radius: 25px;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.suggestion-box h2 {
+    margin-bottom: 15px;
+}
+.suggestion-card {
+    padding: 15px;
+    margin-bottom: 15px;
+    background: rgba(255,255,255,.05);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .3s;
+    flex: auto;
+    text-align: center;
+}
+.suggestion-card:hover {
+    transform: translateY(-4px);
+    background: rgba(255,255,255,.08);
+}
+.suggestion-card img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+.suggestion-card h4 {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.suggestion-card span {
+    color: #bfc8e0;
+}
+.suggestion-flex-card{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.suggestion-card h4{
+  font-size: 13px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.suggestion-card span{
+  font-size: 13px;
+}
+
+.pending-changes {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 15px;
+    background: #17223f;
+    border-radius: 25px;
+    text-align: center;
+}
+.pending-changes h2 {
+    margin-bottom: 20px;
+}
+.save-team-btn {
+    margin-top: 20px;
+    border: none;
+    background:linear-gradient(90deg, #22c55e, #84cc16);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.power-suggestions-pp{
+  background: #17223f;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 0 auto 50px;
+}
+.power-suggestions {
+    margin: 25px auto 5px;
+    display: grid;
+    gap: 10px;
+}
+.power-grid {
+    display: grid;
+    grid-template-columns:  repeat(6, 1fr);
+    gap: 10px;
+}
+
+.suggestion-card {
+    cursor: grab;
+}
+
+.suggestion-card:active {
+    cursor: grabbing;
+}
+.replace-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.replace-actions button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.replace-side {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.replace-side button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    background: #1f2a48;
+    color: white;
+    transition: .2s;
+    text-transform: capitalize;
+}
+.replace-side button:hover {
+    transform: translateY(-2px);
+    background: #2b3960;
+}
+.power-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.refresh-btn {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #1d2d52;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .3s;
+}
+.refresh-btn:hover {
+    transform: rotate(180deg);
+    background: #31477c;
+}
+.pending-changes p{margin-top: 5px;text-transform: capitalize;}
+.drop-active {
+    border: 3px dashed #ffd700;
+    box-shadow: 0 0 30px rgba( 255, 215, 0, .7);
+    transform: scale(1.03);
+}
+.drop-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba( 0, 0, 0, .5);
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    border-radius: 30px;
+}
+.pending-changes {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 25px;
+    background: #17223f;
+}
+.change-row {
+    display: flex;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, .05);
+}
+
+@media(max-width: 1000px){
+    .suggestion-flex-card{flex-wrap: wrap;}
+    .suggestion-card{width: 100%;}
+    .power-grid{grid-template-columns: repeat(3, 1fr);}
+}
+
+@media(max-width: 630px){
+    .compare-layout{flex-wrap: wrap;}
+    .battle-center{width: 100%;}
+    .battle-winner{font-size: 16px;}
+    .power-difference strong{font-size: 18px;}
+    .suggestions-section{gap: 5px;}
+    .suggestion-flex-card{gap: 0;}
+    .suggestion-box{border-radius: 15px;padding: 20px 10px;font-size: 14px;}
+    .suggestion-box h2, .power-header h2 {font-size: 15px;min-height: 36px;}
+    .power-grid{grid-template-columns: repeat(2, 1fr);}
+    .refresh-btn{width: 35px;height: 35px;font-size: 14px;}
+}
+
+

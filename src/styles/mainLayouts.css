@@ -1,0 +1,8 @@
+.layout-content {
+  padding-left: 230px;
+  background: #081729;
+}
+
+@media (max-width: 767px) {
+  .layout-content{padding-left: 50px;}
+}

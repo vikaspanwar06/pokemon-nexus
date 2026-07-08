@@ -1,0 +1,90 @@
+.evolution-section {
+    margin-top: 3rem;
+}
+.evolution-section h2 {
+    margin-bottom: 2rem;
+}
+.evolution-chain {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.evolution-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.evolution-card {
+    width: 200px;
+    position: relative;
+    padding: 48px 16px 32px;
+    background: #162033;
+    border: 1px solid #24324d;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.evolution-card:hover {
+    transform: translateY(-5px);
+    border-color: #ffcb05;
+}
+.evolution-card img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+}
+.evolution-card h3 {
+    margin-top: 1rem;
+    text-transform: capitalize;
+}
+.evolution-arrow {
+    font-size: 2rem;
+    color: #8fa3c5;
+}
+.evolution-type{
+    margin-top: 0.5rem;
+    text-transform: capitalize;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    display: inline-block;
+    font-size: 0.85rem;
+}
+.evolution-card.active {
+    border: 3px solid #ffcb05;
+    box-shadow: 0 0 25px rgba(255, 203, 5, 0.4);
+}
+.current-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    border: 1px solid #ffcb05;
+    color: #111827;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+.no-evolution-text {
+    margin-top: 1rem;
+    color: #8fa3c5;
+    font-style: italic;
+}
+
+@media(max-width: 1023px){
+    .evolution-section h2{text-align: center;}
+    .evolution-wrapper {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .evolution-card {
+        width: 100%;
+    }
+    .evolution-arrow {
+        transform: rotate(90deg);
+    }
+}
